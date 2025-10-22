@@ -72,23 +72,27 @@ h1 {
 
 table {
     border-collapse: collapse;
+    width: 100%;
 }
 
 th {
     font-weight: 300;
     color: var(--Stone-600);
+    padding-left: 12px;
 }
 
 td {
+    padding-left: 3rem;
     font-weight: 600;
     color: var(--Brown-800);
 }
 
 th, td {
-    padding: 1rem;
-    padding-left: 3rem;
-    padding-right: 13rem;
+    padding: 8px 8px 8px 20px;
     border-bottom: 1px solid var(--Stone-150);
+    box-sizing: border-box;
+    text-align: left;
+
 }
 
 .attribution { 
