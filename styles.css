@@ -30,6 +30,7 @@ body{
     align-items: center;
     font-family: "Outfit", san-serif;
     font-weight: 100;
+    font-size: 12px;
 }
 
 #recipe-card {
@@ -45,10 +46,20 @@ body{
 #main-img {
     border-radius: 12px;
 }
-h1 {
+
+#recipe-info {
+    padding: 1rem 0;
+}
+
+#main-title {
     color: var(--Stone-900);
     font-family: "Young Serif", serif;
+    font-size: 28px;
     font-weight: 100;
+}
+
+#description {
+    font-weight: 200;
 }
 
 #preparation-section{
@@ -59,6 +70,11 @@ h1 {
     font-family: "Outfit", sans-serif;
 }
 
+#ingredients-section, #instructions-section {
+     border-bottom: 1px solid var(--Stone-150);
+     margin-bottom: 16px;
+}
+
 #prep-title {
     color: var(--Rose-800);
     font-weight: 600;
@@ -67,8 +83,21 @@ h1 {
 .subtitle {
     color: var(--Brown-800);
     font-family: "Young Serif", serif;
-    font-weight: regular;
+    font-size: 28px;
+    font-weight: 100;
 }
+
+ul, ol{
+    margin: 0 0 20px 0;
+    padding: 0 100px 0 20px;
+}
+
+li::marker {
+    color: var(--Brown-800);
+    font-family: "Outfit", sans-serif;
+    font-weight: 700;
+}
+
 
 table {
     border-collapse: collapse;
@@ -89,10 +118,14 @@ td {
 
 th, td {
     padding: 8px 8px 8px 20px;
-    border-bottom: 1px solid var(--Stone-150);
     box-sizing: border-box;
     text-align: left;
+    font-size: 12px;
 
+}
+
+tr:not(:last-child) {
+     border-bottom: 1px solid var(--Stone-150);
 }
 
 .attribution { 
