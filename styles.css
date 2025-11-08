@@ -170,6 +170,7 @@ tr:not(:last-child) {
 @media (max-width: 480px) { /* Mobile View */
     body {
         padding: 0;
+        margin: 0;
     }
 
     #recipe-card{
