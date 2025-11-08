@@ -35,9 +35,12 @@ body{
 
 #recipe-card {
     background-color: var(--White);
-    width: 33.3vw;
+    width: 100%;
+    max-width: 736px;
     padding: 25px;
-     display: flex;
+    margin: 0 auto;
+
+    display: flex;
     flex-direction: column;
     align-content: center;
     border-radius: 12px;
@@ -89,7 +92,7 @@ body{
 
 ul, ol{
     margin: 0 0 20px 0;
-    padding: 0 100px 0 20px;
+    padding: 0 20px;
 }
 
 li::marker {
@@ -158,13 +161,32 @@ tr:not(:last-child) {
 
 @media (max-width: 480px) {
     body {
-        padding: 16px;
+        padding: 0;
     }
 
-    #recipe-card {
+    #recipe-card{
         width: 100%;
         border-radius: 0;
+        padding: 0px;
+    }
+
+    #main-img{
+        width: 100%;
+        border-radius: 0;
+        display: block;
+    }
+
+    #recipe-info,
+    #preparation-section,
+    #ingredients-section, 
+    #instructions-section,
+    #nutrition-section  
+     {
         padding: 25px;
+    }
+
+    #preparation-section {
+        margin: 25px;
     }
 
     #main-title {
