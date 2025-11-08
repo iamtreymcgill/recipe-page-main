@@ -142,6 +142,10 @@ tr:not(:last-child) {
      border-bottom: 1px solid var(--Stone-150);
 }
 
+#nutrition-section p {
+    font-weight: 300;
+}
+
 .attribution { 
     font-size: 11px; text-align: center; 
 }
@@ -150,7 +154,7 @@ tr:not(:last-child) {
     color: hsl(228, 45%, 44%); 
 }
 
-@media (min-width: 768px) { /* Tablet*/
+@media (min-width: 768px) { /* Tablet View*/
     body {
         padding: 16px;
     }
@@ -159,13 +163,13 @@ tr:not(:last-child) {
         max-width: 400px;
         width: 100%;
         margin: 0 auto;
-        padding: 36px;
-        border-radius: 24px;
+        padding: 25px;
+        border-radius: 10px;
     }
 
     #main-img {
         width: 100%;
-        border-radius: 16px;
+        border-radius: 10px;
     }
 }
 
@@ -209,5 +213,15 @@ tr:not(:last-child) {
 
     .subtitle {
         font-size: 28px;
+    }
+
+    #nutrition-section p{
+        font-size: 20px;
+    }
+
+    #nutrition-section th,
+    #nutrition-section td{
+        font-size: 18px;
+        padding: 12px 12px 12px 35px;
     }
 }
