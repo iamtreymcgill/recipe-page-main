@@ -74,7 +74,7 @@ body{
 
 #ingredients-section, #instructions-section {
      border-bottom: 1px solid var(--Stone-150);
-     margin-bottom: 16px;
+     /* margin-bottom: 16px; */
 }
 
 #prep-title {
@@ -100,6 +100,7 @@ li::marker {
     font-family: "Outfit", sans-serif;
     font-weight: 700;
     margin-left: 10px;
+    font-size: 16px;
 }
 
 strong {
@@ -195,7 +196,7 @@ tr:not(:last-child) {
     #instructions-section,
     #nutrition-section  
      {
-        padding: 25px;
+        padding: 0 25px;
     }
 
     #preparation-section {
@@ -203,10 +204,10 @@ tr:not(:last-child) {
     }
 
     #main-title {
-        font-size: 24px;
+        font-size: 40px;
     }
 
     .subtitle {
-        font-size: 22px;
+        font-size: 28px;
     }
 }
