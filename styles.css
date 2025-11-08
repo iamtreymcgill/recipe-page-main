@@ -173,6 +173,7 @@ tr:not(:last-child) {
         padding: 0;
         margin: 0;
         background-color: var(--White);
+        font-size: 18px;
     }
 
     #recipe-card{
