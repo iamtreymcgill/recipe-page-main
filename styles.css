@@ -35,16 +35,15 @@ body{
 
 #recipe-card {
     background-color: var(--White);
-    width: 500px;
-    padding: 30px;
-    display: flex;
+    width: 33.3vw;
+    padding: 25px;
+     display: flex;
     flex-direction: column;
     align-content: center;
+    border-radius: 12px;
 }
 
-#main-img, 
-#recipe-card, 
-#preparation-section {
+#main-img {
     border-radius: 12px;
 }
 
@@ -55,7 +54,7 @@ body{
 #main-title {
     color: var(--Stone-900);
     font-family: "Young Serif", serif;
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 100;
 }
 
@@ -67,47 +66,38 @@ body{
     background-color: var(--Rose-50);
     color: var(--Stone-600);
     padding: 10px 20px;
+    border-radius: 12px;
     font-family: "Outfit", sans-serif;
 }
 
-#ingredients-section, 
-#instructions-section {
+#ingredients-section, #instructions-section {
      border-bottom: 1px solid var(--Stone-150);
+     margin-bottom: 16px;
 }
 
 #prep-title {
     color: var(--Rose-800);
-    font-weight: bold;
+    font-weight: 600;
 }
 
 .subtitle {
     color: var(--Brown-800);
     font-family: "Young Serif", serif;
-    font-size: 24px;
+    font-size: 28px;
     font-weight: 100;
 }
 
 ul, ol{
-    padding-left: 16px;
+    margin: 0 0 20px 0;
+    padding: 0 100px 0 20px;
 }
 
 li::marker {
     color: var(--Brown-800);
     font-family: "Outfit", sans-serif;
     font-weight: 700;
-    font-size: 12px;
 }
 
-strong {
-    font-weight: bold;
-}
-
-li {
-    color: var(--Stone-600);
-    font-weight: 300;
-    padding: 6px 10px;
-    
-}
 
 table {
     border-collapse: collapse;
@@ -144,4 +134,44 @@ tr:not(:last-child) {
 
 .attribution a { 
     color: hsl(228, 45%, 44%); 
+}
+
+@media (min-width: 768px) {
+    body {
+        padding: 56px 16px;
+    }
+
+    #recipe-card {
+        max-width: 736px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 36px;
+        border-radius: 24px;
+    }
+
+    #main-img {
+        width: 100%;
+        border-radius: 16px;
+        margin-bottom: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 16px;
+    }
+
+    #recipe-card {
+        width: 100%;
+        border-radius: 0;
+        padding: 25px;
+    }
+
+    #main-title {
+        font-size: 24px;
+    }
+
+    .subtitle {
+        font-size: 22px;
+    }
 }
