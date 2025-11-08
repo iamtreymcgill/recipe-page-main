@@ -171,6 +171,7 @@ tr:not(:last-child) {
     body {
         padding: 0;
         margin: 0;
+        background-color: var(--White);
     }
 
     #recipe-card{
